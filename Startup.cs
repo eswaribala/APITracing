@@ -29,6 +29,7 @@ namespace APITracing
         {
 
             services.AddControllers();
+         
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "APITracing", Version = "v1" });
@@ -76,6 +77,7 @@ namespace APITracing
             {
                 endpoints.MapControllers();
             });
+       
         }
 
        
